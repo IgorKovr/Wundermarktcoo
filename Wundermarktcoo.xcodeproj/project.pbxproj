@@ -24,6 +24,8 @@
 		B1ED4AC01E76CC5A00039C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ED4ABF1E76CC5A00039C6C /* Assets.xcassets */; };
 		B1ED4AC31E76CC5A00039C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1ED4AC11E76CC5A00039C6C /* LaunchScreen.storyboard */; };
 		B1ED4ACE1E76CC5A00039C6C /* WundermarktcooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED4ACD1E76CC5A00039C6C /* WundermarktcooTests.swift */; };
+		B1FB26D81E770C59007D9ED5 /* InterestingOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26D71E770C59007D9ED5 /* InterestingOffersViewController.swift */; };
+		B1FB26DB1E770D19007D9ED5 /* InterestingOffersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26DA1E770D19007D9ED5 /* InterestingOffersViewCell.swift */; };
 		D1421DBBFF36374BDFDA6CA9 /* Pods_Wundermarktcoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7961E5D9F18D0C0883145 /* Pods_Wundermarktcoo.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		B1ED4AC91E76CC5A00039C6C /* WundermarktcooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WundermarktcooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ED4ACD1E76CC5A00039C6C /* WundermarktcooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WundermarktcooTests.swift; sourceTree = "<group>"; };
 		B1ED4ACF1E76CC5A00039C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FB26D71E770C59007D9ED5 /* InterestingOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestingOffersViewController.swift; sourceTree = "<group>"; };
+		B1FB26DA1E770D19007D9ED5 /* InterestingOffersViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterestingOffersViewCell.swift; path = Classes/Views/InterestingOffersViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 			children = (
 				B13D89D41E76EC7C009B719C /* MainViewController.swift */,
 				B13D89DD1E76EE58009B719C /* DayOffersViewController.swift */,
+				B1FB26D71E770C59007D9ED5 /* InterestingOffersViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B13D89DF1E76EE70009B719C /* DayOffersViewCell.swift */,
+				B1FB26DA1E770D19007D9ED5 /* InterestingOffersViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -414,7 +420,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FB26D81E770C59007D9ED5 /* InterestingOffersViewController.swift in Sources */,
 				B13D89E01E76EE70009B719C /* DayOffersViewCell.swift in Sources */,
+				B1FB26DB1E770D19007D9ED5 /* InterestingOffersViewCell.swift in Sources */,
 				B13D89D21E76E736009B719C /* Constants.swift in Sources */,
 				B13D89EC1E76F499009B719C /* Array+Vacation.swift in Sources */,
 				B13D89CB1E76D078009B719C /* Offer.swift in Sources */,
