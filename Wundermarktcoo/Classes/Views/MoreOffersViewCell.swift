@@ -16,9 +16,6 @@ class MoreOffersViewCell: UICollectionViewCell, OfferDisplaying {
     @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
-        self.layer.borderColor = UIColor.lightGray.cgColor
-        self.layer.borderWidth = 1
-        self.clipsToBounds = true
         self.backgroundColor = UIColor.white
     }
     
