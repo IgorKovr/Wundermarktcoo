@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6443FC1CD6951A0048ED05A8 /* Pods_WundermarktcooTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1798B7FA8F4FEA91DAEF796F /* Pods_WundermarktcooTests.framework */; };
+		B13D89CB1E76D078009B719C /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89CA1E76D078009B719C /* Offer.swift */; };
+		B13D89CF1E76D75A009B719C /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89CA1E76D078009B719C /* Offer.swift */; };
+		B13D89D21E76E736009B719C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89D11E76E736009B719C /* Constants.swift */; };
+		B13D89D31E76E82F009B719C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89D11E76E736009B719C /* Constants.swift */; };
+		B13D89D51E76EC7C009B719C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89D41E76EC7C009B719C /* MainViewController.swift */; };
+		B13D89DE1E76EE58009B719C /* DayOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89DD1E76EE58009B719C /* DayOffersViewController.swift */; };
+		B13D89E01E76EE70009B719C /* DayOffersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89DF1E76EE70009B719C /* DayOffersViewCell.swift */; };
+		B13D89E31E76EFC0009B719C /* OfferDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89E21E76EFC0009B719C /* OfferDisplaying.swift */; };
+		B13D89E61E76F1D8009B719C /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89E51E76F1D8009B719C /* ErrorManager.swift */; };
+		B13D89EC1E76F499009B719C /* Array+Vacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D89EB1E76F499009B719C /* Array+Vacation.swift */; };
 		B1ED4AB91E76CC5A00039C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED4AB81E76CC5A00039C6C /* AppDelegate.swift */; };
 		B1ED4ABB1E76CC5A00039C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED4ABA1E76CC5A00039C6C /* ViewController.swift */; };
 		B1ED4ABE1E76CC5A00039C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1ED4ABC1E76CC5A00039C6C /* Main.storyboard */; };
 		B1ED4AC01E76CC5A00039C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ED4ABF1E76CC5A00039C6C /* Assets.xcassets */; };
 		B1ED4AC31E76CC5A00039C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1ED4AC11E76CC5A00039C6C /* LaunchScreen.storyboard */; };
 		B1ED4ACE1E76CC5A00039C6C /* WundermarktcooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED4ACD1E76CC5A00039C6C /* WundermarktcooTests.swift */; };
+		D1421DBBFF36374BDFDA6CA9 /* Pods_Wundermarktcoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7961E5D9F18D0C0883145 /* Pods_Wundermarktcoo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1798B7FA8F4FEA91DAEF796F /* Pods_WundermarktcooTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WundermarktcooTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547CE18CCA36BFFA40DDE3BA /* Pods-Wundermarktcoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundermarktcoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wundermarktcoo/Pods-Wundermarktcoo.debug.xcconfig"; sourceTree = "<group>"; };
+		5CD5B924DDD5A5F04142F347 /* Pods-WundermarktcooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WundermarktcooTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WundermarktcooTests/Pods-WundermarktcooTests.release.xcconfig"; sourceTree = "<group>"; };
+		7444CE9216AAF035A048FE43 /* Pods-Wundermarktcoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundermarktcoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wundermarktcoo/Pods-Wundermarktcoo.release.xcconfig"; sourceTree = "<group>"; };
+		76A7961E5D9F18D0C0883145 /* Pods_Wundermarktcoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wundermarktcoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FDE19D1EEAC2E72D652F88C /* Pods-WundermarktcooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WundermarktcooTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WundermarktcooTests/Pods-WundermarktcooTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B13D89CA1E76D078009B719C /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Offer.swift; path = Classes/Models/Offer.swift; sourceTree = "<group>"; };
+		B13D89D11E76E736009B719C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B13D89D41E76EC7C009B719C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		B13D89DD1E76EE58009B719C /* DayOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayOffersViewController.swift; path = Classes/Controllers/DayOffersViewController.swift; sourceTree = "<group>"; };
+		B13D89DF1E76EE70009B719C /* DayOffersViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayOffersViewCell.swift; path = Classes/Views/DayOffersViewCell.swift; sourceTree = "<group>"; };
+		B13D89E21E76EFC0009B719C /* OfferDisplaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferDisplaying.swift; path = Classes/Protocols/OfferDisplaying.swift; sourceTree = "<group>"; };
+		B13D89E51E76F1D8009B719C /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorManager.swift; path = Classes/Managers/ErrorManager.swift; sourceTree = "<group>"; };
+		B13D89EB1E76F499009B719C /* Array+Vacation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Vacation.swift"; path = "Classes/Extensions/Array+Vacation.swift"; sourceTree = "<group>"; };
 		B1ED4AB51E76CC5900039C6C /* Wundermarktcoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wundermarktcoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ED4AB81E76CC5A00039C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1ED4ABA1E76CC5A00039C6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1421DBBFF36374BDFDA6CA9 /* Pods_Wundermarktcoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +77,95 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6443FC1CD6951A0048ED05A8 /* Pods_WundermarktcooTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76E8EE73B390BE723C6644FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				547CE18CCA36BFFA40DDE3BA /* Pods-Wundermarktcoo.debug.xcconfig */,
+				7444CE9216AAF035A048FE43 /* Pods-Wundermarktcoo.release.xcconfig */,
+				9FDE19D1EEAC2E72D652F88C /* Pods-WundermarktcooTests.debug.xcconfig */,
+				5CD5B924DDD5A5F04142F347 /* Pods-WundermarktcooTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B13D89C81E76D033009B719C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89E41E76F1C0009B719C /* Managers */,
+				B13D89E11E76EECD009B719C /* Protocols */,
+				B13D89D81E76EDE5009B719C /* Views */,
+				B13D89D01E76E714009B719C /* Controllers */,
+				B13D89CC1E76D221009B719C /* Extensions */,
+				B13D89C91E76D040009B719C /* Models */,
+				B13D89D11E76E736009B719C /* Constants.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B13D89C91E76D040009B719C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89CA1E76D078009B719C /* Offer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B13D89CC1E76D221009B719C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89EB1E76F499009B719C /* Array+Vacation.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B13D89D01E76E714009B719C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89D41E76EC7C009B719C /* MainViewController.swift */,
+				B13D89DD1E76EE58009B719C /* DayOffersViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B13D89D81E76EDE5009B719C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89DF1E76EE70009B719C /* DayOffersViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B13D89E11E76EECD009B719C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89E21E76EFC0009B719C /* OfferDisplaying.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B13D89E41E76F1C0009B719C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B13D89E51E76F1D8009B719C /* ErrorManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		B1ED4AAC1E76CC5900039C6C = {
 			isa = PBXGroup;
 			children = (
 				B1ED4AB71E76CC5900039C6C /* Wundermarktcoo */,
 				B1ED4ACC1E76CC5A00039C6C /* WundermarktcooTests */,
 				B1ED4AB61E76CC5900039C6C /* Products */,
+				76E8EE73B390BE723C6644FD /* Pods */,
+				B921B3616C6A59100F133C5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +181,7 @@
 		B1ED4AB71E76CC5900039C6C /* Wundermarktcoo */ = {
 			isa = PBXGroup;
 			children = (
+				B13D89C81E76D033009B719C /* Classes */,
 				B1ED4AB81E76CC5A00039C6C /* AppDelegate.swift */,
 				B1ED4ABA1E76CC5A00039C6C /* ViewController.swift */,
 				B1ED4ABC1E76CC5A00039C6C /* Main.storyboard */,
@@ -96,6 +201,15 @@
 			path = WundermarktcooTests;
 			sourceTree = "<group>";
 		};
+		B921B3616C6A59100F133C5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A7961E5D9F18D0C0883145 /* Pods_Wundermarktcoo.framework */,
+				1798B7FA8F4FEA91DAEF796F /* Pods_WundermarktcooTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ED4AD21E76CC5A00039C6C /* Build configuration list for PBXNativeTarget "Wundermarktcoo" */;
 			buildPhases = (
+				6910B8E94E007044132BC4C8 /* [CP] Check Pods Manifest.lock */,
 				B1ED4AB11E76CC5900039C6C /* Sources */,
 				B1ED4AB21E76CC5900039C6C /* Frameworks */,
 				B1ED4AB31E76CC5900039C6C /* Resources */,
+				622B5EE25CA603CB75D5D956 /* [CP] Embed Pods Frameworks */,
+				E31C0BFE928807E2C8838037 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ED4AD51E76CC5A00039C6C /* Build configuration list for PBXNativeTarget "WundermarktcooTests" */;
 			buildPhases = (
+				78447D4052612747E30ED451 /* [CP] Check Pods Manifest.lock */,
 				B1ED4AC51E76CC5A00039C6C /* Sources */,
 				B1ED4AC61E76CC5A00039C6C /* Frameworks */,
 				B1ED4AC71E76CC5A00039C6C /* Resources */,
+				525682C1345207FA3081BAE6 /* [CP] Embed Pods Frameworks */,
+				4648F844F125E9EF984B2D96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,12 +316,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4648F844F125E9EF984B2D96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WundermarktcooTests/Pods-WundermarktcooTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		525682C1345207FA3081BAE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WundermarktcooTests/Pods-WundermarktcooTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		622B5EE25CA603CB75D5D956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wundermarktcoo/Pods-Wundermarktcoo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6910B8E94E007044132BC4C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78447D4052612747E30ED451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E31C0BFE928807E2C8838037 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wundermarktcoo/Pods-Wundermarktcoo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1ED4AB11E76CC5900039C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13D89E01E76EE70009B719C /* DayOffersViewCell.swift in Sources */,
+				B13D89D21E76E736009B719C /* Constants.swift in Sources */,
+				B13D89EC1E76F499009B719C /* Array+Vacation.swift in Sources */,
+				B13D89CB1E76D078009B719C /* Offer.swift in Sources */,
+				B13D89E31E76EFC0009B719C /* OfferDisplaying.swift in Sources */,
+				B13D89E61E76F1D8009B719C /* ErrorManager.swift in Sources */,
+				B13D89DE1E76EE58009B719C /* DayOffersViewController.swift in Sources */,
 				B1ED4ABB1E76CC5A00039C6C /* ViewController.swift in Sources */,
+				B13D89D51E76EC7C009B719C /* MainViewController.swift in Sources */,
 				B1ED4AB91E76CC5A00039C6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +431,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13D89CF1E76D75A009B719C /* Offer.swift in Sources */,
 				B1ED4ACE1E76CC5A00039C6C /* WundermarktcooTests.swift in Sources */,
+				B13D89D31E76E82F009B719C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +560,7 @@
 		};
 		B1ED4AD31E76CC5A00039C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 547CE18CCA36BFFA40DDE3BA /* Pods-Wundermarktcoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WJ745D7M93;
@@ -350,6 +574,7 @@
 		};
 		B1ED4AD41E76CC5A00039C6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7444CE9216AAF035A048FE43 /* Pods-Wundermarktcoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WJ745D7M93;
@@ -363,6 +588,7 @@
 		};
 		B1ED4AD61E76CC5A00039C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FDE19D1EEAC2E72D652F88C /* Pods-WundermarktcooTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,6 +604,7 @@
 		};
 		B1ED4AD71E76CC5A00039C6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD5B924DDD5A5F04142F347 /* Pods-WundermarktcooTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +637,7 @@
 				B1ED4AD41E76CC5A00039C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1ED4AD51E76CC5A00039C6C /* Build configuration list for PBXNativeTarget "WundermarktcooTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +646,7 @@
 				B1ED4AD71E76CC5A00039C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

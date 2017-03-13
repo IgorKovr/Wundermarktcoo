@@ -7,30 +7,114 @@
 //
 
 import XCTest
+import Vacation
+
 @testable import Wundermarktcoo
 
 class WundermarktcooTests: XCTestCase {
+    let manager = AFHTTPSessionManager(baseURL: URL(string: URLConstants.base))
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    
+    func testOffersOfTheDay() {
+        var array : Array <Offer>
+        array.fillWith
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testOffersOfTheDay() {
+        let expectation = self.expectation(description: "fetch")
+        manager.get(
+            URLConstants.offersOfTheDay,
+            parameters: nil,
+            success:
+            {
+                (operation, responseObject) in
+                if let fromJSONArray = responseObject as? Array<Any> {
+                    print(fromJSONArray)
+                    do {
+                        let models = try MTLJSONAdapter.models(of: Offer.self, fromJSONArray: fromJSONArray)
+                        print(models)
+                        XCTAssert(models.count > 0, "offersOfTheDay Pass")
+                        expectation.fulfill()
+                    } catch {
+                        XCTFail()
+                        expectation.fulfill()
+                    }
+                }
+        },
+            failure:
+            {
+                (operation, error) in
+                print("Error: " + error.localizedDescription)
+                XCTFail()
+                expectation.fulfill()
+        })
+        self.waitForExpectations(timeout: 5, handler: nil)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testInterestingOffers() {
+        let expectation = self.expectation(description: "fetch")
+        manager.get(
+            URLConstants.interestingOffers,
+            parameters: nil,
+            success:
+            {
+                (operation, responseObject) in
+                if let fromJSONArray = responseObject as? Array<Any> {
+                    print(fromJSONArray)
+                    do {
+                        let models = try MTLJSONAdapter.models(of: Offer.self, fromJSONArray: fromJSONArray)
+                        print(models)
+                        XCTAssert(models.count > 0, "offersOfTheDay Pass")
+                        expectation.fulfill()
+                    } catch {
+                        XCTFail()
+                        expectation.fulfill()
+                    }
+                }
+        },
+            failure:
+            {
+                (operation, error) in
+                print("Error: " + error.localizedDescription)
+                XCTFail()
+                expectation.fulfill()
+        })
+        self.waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testMoreOffers() {
+        let expectation = self.expectation(description: "fetch")
+        manager.get(
+            URLConstants.moreOffers,
+            parameters: nil,
+            success:
+            {
+                (operation, responseObject) in
+                if let fromJSONArray = responseObject as? Array<Any> {
+                    print(fromJSONArray)
+                    do {
+                        let models = try MTLJSONAdapter.models(of: Offer.self, fromJSONArray: fromJSONArray)
+                        print(models)
+                        XCTAssert(models.count > 0, "offersOfTheDay Pass")
+                        expectation.fulfill()
+                    } catch {
+                        XCTFail()
+                        expectation.fulfill()
+                    }
+                }
+        },
+            failure:
+            {
+                (operation, error) in
+                print("Error: " + error.localizedDescription)
+                XCTFail()
+                expectation.fulfill()
+        })
+        self.waitForExpectations(timeout: 5, handler: nil)
     }
     
 }
