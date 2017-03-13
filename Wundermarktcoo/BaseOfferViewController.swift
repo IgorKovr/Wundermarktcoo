@@ -21,7 +21,7 @@ class BaseOfferViewController: UICollectionViewController {
     }
     
     private func updateData() {
-        VCStateTransferObject.getObjectsOfClass(Offer(), url: offersURL, success: { (array) in
+        VCStateTransferObject.getObjectsOfClass(Offer.self, url: offersURL, success: { (array) in
             self.offers = array
             self.reloadData()
         }) { (error) in

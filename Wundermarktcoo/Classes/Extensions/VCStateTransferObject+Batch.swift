@@ -24,13 +24,15 @@ extension VCStateTransferObject {
      
      */
     
-    class func getObjectsOfClass<T : VCStateTransferObject>(_ modelClass: T!, url: String!, success: @escaping (_ result: Array <T>) -> Void, failure: @escaping (_ error: Error) -> Void) {
+    class func getObjectsOfClass <T : VCStateTransferObject>(_ modelClass: T.Type, url: String!, success: @escaping (_ result: Array
+        <T>) -> Void, failure: @escaping (_ error: Error) -> Void) {
+        
         let manager = VCWebService.sharedInstance()!
         manager.get( url, parameters: nil, success: {
             (operation, responseObject) in
             if let fromJSONArray = responseObject as? Array<Any> {
                 do {
-                    let models = try MTLJSONAdapter.models(of: Offer.self, fromJSONArray: fromJSONArray) // TODO: Change to dynamic Type
+                    let models = try MTLJSONAdapter.models(of: modelClass, fromJSONArray: fromJSONArray)
                     success(models as! Array<T>)
                 } catch {
                     failure(error)
