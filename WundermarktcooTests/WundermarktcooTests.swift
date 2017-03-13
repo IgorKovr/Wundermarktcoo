@@ -20,11 +20,6 @@ class WundermarktcooTests: XCTestCase {
     
     
     func testOffersOfTheDay() {
-        var array : Array <Offer>
-        array.fillWith
-    }
-    
-    func testOffersOfTheDay() {
         let expectation = self.expectation(description: "fetch")
         manager.get(
             URLConstants.offersOfTheDay,

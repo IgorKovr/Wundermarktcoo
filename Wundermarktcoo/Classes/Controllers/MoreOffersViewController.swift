@@ -9,35 +9,8 @@
 import UIKit
 import Vacation
 
-class MoreOffersViewController: UICollectionViewController {
-    var offers : Array <Offer> = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateData()
-    }
-    
-    private func updateData() {
-        VCStateTransferObject.getObjectsOfClass(Offer(), url: URLConstants.moreOffers, success: { (array) in
-            self.offers = array
-            self.reloadData()
-        }) { (error) in
-            ErrorManager.logError(error, comment: "Loading More Offers")
-        }
-    }
-    
-    func reloadData() {
-        self.collectionView?.reloadData()
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return offers.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoreOffersViewCell", for: indexPath) as! MoreOffersViewCell
-        cell.setOffer(offers[indexPath.row])
-        return cell
-    }
-    
+class MoreOffersViewController: BaseOfferViewController {
+    override public var errorMessage: String { get { return "Loading More Offers" } set {} }
+    override public var offersURL: String { get { return URLConstants.moreOffers } set {} }
+    override public var cellReuseIdentifier: String { get { return "MoreOffersViewCell" } set {} }
 }

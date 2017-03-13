@@ -9,35 +9,8 @@
 import UIKit
 import Vacation
 
-class InterestingOffersViewController: UICollectionViewController {
-    var offers : Array <Offer> = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateData()
-    }
-    
-    private func updateData() {
-        VCStateTransferObject.getObjectsOfClass(Offer(), url: URLConstants.interestingOffers, success: { (array) in
-            self.offers = array
-            self.reloadData()
-        }) { (error) in
-            ErrorManager.logError(error, comment: "Loading Interesting Offers")
-        }
-    }
-    
-    func reloadData() {
-        self.collectionView?.reloadData()
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return offers.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InterestingOffersViewCell", for: indexPath) as! InterestingOffersViewCell
-        cell.setOffer(offers[indexPath.row])
-        return cell
-    }
-    
+class InterestingOffersViewController: BaseOfferViewController {
+    override public var errorMessage: String { get { return "Loading Interesting Offers" } set {} }
+    override public var offersURL: String { get { return URLConstants.interestingOffers } set {} }
+    override public var cellReuseIdentifier: String { get { return "InterestingOffersViewCell" } set {} }
 }

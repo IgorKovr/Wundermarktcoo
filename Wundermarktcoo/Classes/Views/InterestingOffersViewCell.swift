@@ -8,19 +8,11 @@
 
 import UIKit
 
-class InterestingOffersViewCell: UICollectionViewCell, OfferDisplaying {
-    @IBOutlet var imageView : UIImageView?
-    
+class InterestingOffersViewCell: BaseOfferViewCell {
     override func awakeFromNib() {
         self.layer.cornerRadius = 4
         self.layer.borderColor = UIColor.lightGray.cgColor
-        self.layer.borderWidth = 1
+        self.layer.borderWidth = 0.5
         self.clipsToBounds = true
-    }
-    
-    func setOffer(_ offer: Offer) {
-        if (offer.image != nil){
-            imageView?.setImageWith(URL(string: offer.image!)!)
-        }
     }
 }
