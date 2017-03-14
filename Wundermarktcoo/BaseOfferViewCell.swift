@@ -19,6 +19,12 @@ class BaseOfferViewCell: UICollectionViewCell, OfferDisplaying {
         self.backgroundColor = UIColor.white
     }
     
+    override func prepareForReuse() {
+        if ((imageView != nil)){
+            imageView?.image = nil
+        }
+    }
+    
     func setOffer(_ offer: Offer) {
         if ((offer.image != nil) && (imageView != nil)){
             imageView?.setImageWith(URL(string: offer.image!)!)

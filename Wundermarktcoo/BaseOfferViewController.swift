@@ -9,11 +9,16 @@
 import UIKit
 import Vacation
 
+protocol BaseOfferViewControllerDelegate {
+    func baseOfferViewController(_ baseOfferViewController: BaseOfferViewController, didSelect offer: Offer)
+}
+
 class BaseOfferViewController: UICollectionViewController {
     var offers : Array <Offer> = []
     var errorMessage = "Loading Offers"
     var offersURL = URLConstants.offersOfTheDay
     var cellReuseIdentifier = "BaseOfferViewController" //TODO: Add Exception throw for abstract class
+    var delegate : BaseOfferViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +46,13 @@ class BaseOfferViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! BaseOfferViewCell
         cell.setOffer(offers[indexPath.row])
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let offer = offers[indexPath.row]
+        if (delegate != nil) {
+            delegate?.baseOfferViewController(self, didSelect: offer)
+        }
     }
     
 }

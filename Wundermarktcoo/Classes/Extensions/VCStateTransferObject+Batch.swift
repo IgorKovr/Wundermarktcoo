@@ -11,7 +11,6 @@ import Vacation
 
 extension VCStateTransferObject {
     
-    
     /**
      Method for fetching Array of VCStateTransferObject's
      

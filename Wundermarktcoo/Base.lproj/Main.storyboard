@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JOr-Ya-k5e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="hf3-fz-ReW">
+            <objects>
+                <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="JOr-Ya-k5e" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6b2-pe-0jO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QCg-jN-EXL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4O-aO-bde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2036" y="202"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wundermarktcoo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainViewController" customModule="Wundermarktcoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="260" id="bMW-bg-W4V"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="20f-V4-o9P" kind="embed" id="xL2-Ug-ncT"/>
+                                    <segue destination="20f-V4-o9P" kind="embed" identifier="embedSegue" id="xL2-Ug-ncT"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-2G-3vJ">
@@ -37,7 +56,7 @@
                                     <constraint firstAttribute="height" constant="132" id="IaT-PB-Eyr"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="MP7-us-QDd" kind="embed" id="BjE-vS-6kQ"/>
+                                    <segue destination="MP7-us-QDd" kind="embed" identifier="embedSegue" id="BjE-vS-6kQ"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interessante Angebote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaR-bz-28x">
@@ -52,7 +71,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" restorationIdentifier="MoreOffersViewController" translatesAutoresizingMaskIntoConstraints="NO" id="Gpb-Cl-1b5">
                                 <rect key="frame" x="0.0" y="425" width="375" height="242"/>
                                 <connections>
-                                    <segue destination="JaN-Z1-Bcj" kind="embed" id="dKb-B8-bH4"/>
+                                    <segue destination="JaN-Z1-Bcj" kind="embed" identifier="embedSegue" id="dKb-B8-bH4"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -74,16 +93,22 @@
                             <constraint firstItem="DQa-2G-3vJ" firstAttribute="top" secondItem="Cpb-KF-nxl" secondAttribute="bottom" constant="35" id="ziS-fy-dfO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="18P-sw-Pn6"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="ogq-Ig-ojh" kind="show" identifier="showOfferSegue" id="VV4-yD-RPf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1087" y="199"/>
+            <point key="canvasLocation" x="-1148" y="202"/>
         </scene>
         <!--Day Offers View Controller-->
         <scene sceneID="oZG-zS-C9s">
             <objects>
-                <collectionViewController id="20f-V4-o9P" customClass="DayOffersViewController" customModule="Wundermarktcoo" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="7EV-IO-FcR">
+                <collectionViewController automaticallyAdjustsScrollViewInsets="NO" id="20f-V4-o9P" customClass="DayOffersViewController" customModule="Wundermarktcoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="7EV-IO-FcR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -148,10 +173,13 @@
                             <outlet property="delegate" destination="20f-V4-o9P" id="QTE-2C-laL"/>
                         </connections>
                     </collectionView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1D4-Oa-ECe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="15"/>
+            <point key="canvasLocation" x="-284" y="-27"/>
         </scene>
         <!--More Offers View Controller-->
         <scene sceneID="HtT-j0-2hR">
@@ -291,7 +319,7 @@
         <scene sceneID="xHl-YU-gwO">
             <objects>
                 <collectionViewController storyboardIdentifier="InterestingOffersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MP7-us-QDd" customClass="InterestingOffersViewController" customModule="Wundermarktcoo" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Eou-mg-PY9">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Eou-mg-PY9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -344,7 +372,54 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehp-IN-h3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="249"/>
+            <point key="canvasLocation" x="-284" y="201"/>
+        </scene>
+        <!--Offer View Controller-->
+        <scene sceneID="Ebw-fu-NCC">
+            <objects>
+                <viewController id="ogq-Ig-ojh" customClass="OfferViewController" customModule="Wundermarktcoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="92a-Lg-kSr"/>
+                        <viewControllerLayoutGuide type="bottom" id="okQ-1q-SM9"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="oui-nS-j8G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EJq-Ii-EeA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKu-Jd-MRr">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="titleButtonTap:" destination="ogq-Ig-ojh" eventType="touchUpInside" id="eJz-hX-j4H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EJq-Ii-EeA" firstAttribute="top" secondItem="oui-nS-j8G" secondAttribute="top" id="EdV-Wj-bwp"/>
+                            <constraint firstItem="okQ-1q-SM9" firstAttribute="top" secondItem="EJq-Ii-EeA" secondAttribute="bottom" id="Okv-UP-zZG"/>
+                            <constraint firstItem="EJq-Ii-EeA" firstAttribute="leading" secondItem="oui-nS-j8G" secondAttribute="leading" id="Z8t-K7-U5y"/>
+                            <constraint firstItem="rKu-Jd-MRr" firstAttribute="top" secondItem="92a-Lg-kSr" secondAttribute="bottom" id="fnH-f9-RsR"/>
+                            <constraint firstAttribute="trailing" secondItem="EJq-Ii-EeA" secondAttribute="trailing" id="k0A-4J-Ez3"/>
+                            <constraint firstItem="rKu-Jd-MRr" firstAttribute="leading" secondItem="oui-nS-j8G" secondAttribute="leadingMargin" id="mKa-Gk-xrl"/>
+                            <constraint firstItem="okQ-1q-SM9" firstAttribute="top" secondItem="rKu-Jd-MRr" secondAttribute="bottom" id="tyX-PR-9eo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rKu-Jd-MRr" secondAttribute="trailing" id="wez-hJ-ro1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="EJq-Ii-EeA" id="RcA-H0-G1W"/>
+                        <outlet property="titleButton" destination="rKu-Jd-MRr" id="G7h-YZ-6Wb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTF-fd-aO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1148" y="926"/>
         </scene>
     </scenes>
 </document>

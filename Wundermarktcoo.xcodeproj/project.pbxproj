@@ -28,6 +28,8 @@
 		B1FB26E21E771CAA007D9ED5 /* BaseOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26E11E771CAA007D9ED5 /* BaseOfferViewController.swift */; };
 		B1FB26E41E771DFB007D9ED5 /* BaseOfferViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26E31E771DFB007D9ED5 /* BaseOfferViewCell.swift */; };
 		B1FB26E61E772215007D9ED5 /* VCStateTransferObject+Batch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26E51E772215007D9ED5 /* VCStateTransferObject+Batch.swift */; };
+		B1FB26E81E782371007D9ED5 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26E71E782371007D9ED5 /* OfferViewController.swift */; };
+		B1FB26EA1E7825DB007D9ED5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB26E91E7825DB007D9ED5 /* MainViewController.swift */; };
 		D1421DBBFF36374BDFDA6CA9 /* Pods_Wundermarktcoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7961E5D9F18D0C0883145 /* Pods_Wundermarktcoo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,7 @@
 		B13D89D11E76E736009B719C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B13D89DD1E76EE58009B719C /* DayOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayOffersViewController.swift; path = Classes/Controllers/DayOffersViewController.swift; sourceTree = "<group>"; };
 		B13D89DF1E76EE70009B719C /* DayOffersViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayOffersViewCell.swift; path = Classes/Views/DayOffersViewCell.swift; sourceTree = "<group>"; };
-		B13D89E21E76EFC0009B719C /* OfferDisplaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferDisplaying.swift; path = Classes/Protocols/OfferDisplaying.swift; sourceTree = "<group>"; };
+		B13D89E21E76EFC0009B719C /* OfferDisplaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = OfferDisplaying.swift; path = Classes/Protocols/OfferDisplaying.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B13D89E51E76F1D8009B719C /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorManager.swift; path = Classes/Managers/ErrorManager.swift; sourceTree = "<group>"; };
 		B1ED4AB51E76CC5900039C6C /* Wundermarktcoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wundermarktcoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ED4AB81E76CC5A00039C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,9 +69,11 @@
 		B1FB26DA1E770D19007D9ED5 /* InterestingOffersViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterestingOffersViewCell.swift; path = Classes/Views/InterestingOffersViewCell.swift; sourceTree = "<group>"; };
 		B1FB26DD1E77107B007D9ED5 /* MoreOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreOffersViewController.swift; path = Classes/Controllers/MoreOffersViewController.swift; sourceTree = "<group>"; };
 		B1FB26DF1E7710B3007D9ED5 /* MoreOffersViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreOffersViewCell.swift; path = Classes/Views/MoreOffersViewCell.swift; sourceTree = "<group>"; };
-		B1FB26E11E771CAA007D9ED5 /* BaseOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOfferViewController.swift; sourceTree = "<group>"; };
-		B1FB26E31E771DFB007D9ED5 /* BaseOfferViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOfferViewCell.swift; sourceTree = "<group>"; };
+		B1FB26E11E771CAA007D9ED5 /* BaseOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BaseOfferViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B1FB26E31E771DFB007D9ED5 /* BaseOfferViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BaseOfferViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B1FB26E51E772215007D9ED5 /* VCStateTransferObject+Batch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "VCStateTransferObject+Batch.swift"; path = "Classes/Extensions/VCStateTransferObject+Batch.swift"; sourceTree = "<group>"; };
+		B1FB26E71E782371007D9ED5 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = OfferViewController.swift; path = Classes/Controllers/OfferViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B1FB26E91E7825DB007D9ED5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/Controllers/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				B1FB26D71E770C59007D9ED5 /* InterestingOffersViewController.swift */,
 				B1FB26DD1E77107B007D9ED5 /* MoreOffersViewController.swift */,
 				B1FB26E11E771CAA007D9ED5 /* BaseOfferViewController.swift */,
+				B1FB26E71E782371007D9ED5 /* OfferViewController.swift */,
+				B1FB26E91E7825DB007D9ED5 /* MainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -433,9 +439,11 @@
 				B1FB26DB1E770D19007D9ED5 /* InterestingOffersViewCell.swift in Sources */,
 				B1FB26E41E771DFB007D9ED5 /* BaseOfferViewCell.swift in Sources */,
 				B13D89D21E76E736009B719C /* Constants.swift in Sources */,
+				B1FB26EA1E7825DB007D9ED5 /* MainViewController.swift in Sources */,
 				B13D89CB1E76D078009B719C /* Offer.swift in Sources */,
 				B13D89E31E76EFC0009B719C /* OfferDisplaying.swift in Sources */,
 				B13D89E61E76F1D8009B719C /* ErrorManager.swift in Sources */,
+				B1FB26E81E782371007D9ED5 /* OfferViewController.swift in Sources */,
 				B13D89DE1E76EE58009B719C /* DayOffersViewController.swift in Sources */,
 				B1FB26DE1E77107B007D9ED5 /* MoreOffersViewController.swift in Sources */,
 				B1FB26E21E771CAA007D9ED5 /* BaseOfferViewController.swift in Sources */,
